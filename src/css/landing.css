@@ -1,27 +1,43 @@
 body {
-  font-family: 'Arimo', serif!important;
+  font-family: "Arimo", serif !important;
 }
-
-
 
 .main-navigation {
   float: right;
 }
 
-.jumbotron{
-  background-image: url("../img/banner.jpg");
-  background-size:cover;
+.jumbotron {
+  background-image: url("../img/pyaar.jpg");
+  background-size: cover;
+  width: 100%;
+}
+#navbar-custom .navbar-nav .nav-link::before {
+  content: " ";
+  width: 0px;
+  height: 0px;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: 10px;
+  transition: 0.5s;
+}
+#navbar-custom .navbar-nav .nav-link:hover::before {
+  content: " ";
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 7px;
 }
 
-#votingPage{
-  margin-top:95px;
+#votingPage {
+  margin-top: 95px;
 }
 
-#blockvote-card{
-  -webkit-box-shadow: 3px 10px 44px 0px rgba(222,222,222,1);
-  -moz-box-shadow: 3px 10px 44px 0px rgba(222,222,222,1);
-  box-shadow: 3px 10px 44px 0px rgba(222,222,222,1);
-  margin: 0px auto!important;
+#blockvote-card {
+  -webkit-box-shadow: 3px 10px 44px 0px rgba(222, 222, 222, 1);
+  -moz-box-shadow: 3px 10px 44px 0px rgba(222, 222, 222, 1);
+  box-shadow: 3px 10px 44px 0px rgba(222, 222, 222, 1);
+  margin: 0px auto !important;
 }
 
 .dark-mode {
